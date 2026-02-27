@@ -668,6 +668,197 @@ p {
     color: var(--text-muted);
 }
 
+/* Automation Section */
+.automation {
+    padding: 6rem 0;
+    background-color: var(--bg-darker);
+    position: relative;
+    border-top: var(--glass-border);
+}
+
+/* Automation Section (Bento Grid) */
+.automation {
+    padding: 6rem 0;
+    background-color: var(--bg-darker);
+    position: relative;
+    border-top: var(--glass-border);
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bento-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.bento-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.bento-large {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.02) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.bento-medium {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.bento-small {
+    grid-column: span 1;
+    grid-row: span 1;
+    padding: 1.5rem;
+}
+
+.bento-accent {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(139, 92, 246, 0.02) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.bento-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.bento-small .bento-icon {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.bento-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+
+.bento-content h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.bento-large h3 {
+    font-size: 1.75rem;
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+}
+
+.bento-content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.bento-content p.text-sm {
+    font-size: 0.85rem;
+}
+
+/* Target Audience */
+.target-audience {
+    padding: 6rem 0;
+    background-color: var(--bg-dark);
+    position: relative;
+    border-top: var(--glass-border);
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.audience-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: var(--glass-border);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    transition: var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.audience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: var(--transition-base);
+}
+
+.audience-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.audience-card:hover::before {
+    opacity: 1;
+}
+
+.audience-icon {
+    font-size: 3rem;
+    color: var(--primary-light);
+    margin-bottom: 1.5rem;
+    display: inline-flex;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    transition: var(--transition-base);
+}
+
+.audience-card:hover .audience-icon {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(139, 92, 246, 0.1) 100%);
+}
+
+.audience-card p {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.audience-card p strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
 /* Footer */
 .footer {
     background: var(--bg-dark);
@@ -746,6 +937,21 @@ p {
     }
 
     .pipeline-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-large,
+    .bento-medium,
+    .bento-small {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    .audience-grid {
         grid-template-columns: 1fr;
     }
 

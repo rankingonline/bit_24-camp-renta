@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -122,19 +125,27 @@
 
             <div class="situaciones-list">
                 <div class="situacion-item fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="icon-wrapper">📍</div>
+                    <div class="icon-wrapper">
+                        <i class="ph ph-map-pin"></i>
+                    </div>
                     <p>No sabes en qué punto está cada expediente de renta.</p>
                 </div>
                 <div class="situacion-item fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="icon-wrapper">🧠</div>
+                    <div class="icon-wrapper">
+                        <i class="ph ph-brain"></i>
+                    </div>
                     <p>Tus gestores tienen que recordar manualmente qué falta por pedir a cada cliente.</p>
                 </div>
                 <div class="situacion-item fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="icon-wrapper">📁</div>
+                    <div class="icon-wrapper">
+                        <i class="ph ph-folders"></i>
+                    </div>
                     <p>Los documentos llegan por email, WhatsApp y en papel, todo mezclado.</p>
                 </div>
                 <div class="situacion-item fade-in-up" style="animation-delay: 0.4s;">
-                    <div class="icon-wrapper">🔄</div>
+                    <div class="icon-wrapper">
+                        <i class="ph ph-arrows-clockwise"></i>
+                    </div>
                     <p>Cada año la campaña se soluciona "como siempre" pero sin un proceso claro.</p>
                 </div>
             </div>
@@ -204,6 +215,129 @@
 
             <p class="pipeline-note fade-in-up" style="animation-delay: 0.7s;">Las etapas se personalizan según el flujo
                 real de tu asesoría.</p>
+        </div>
+    </section>
+
+    <!-- Automation Section (Bento Grid) -->
+    <section class="automation" id="automatizacion">
+        <div class="container section-container">
+            <div class="section-header fade-in-up">
+                <span class="badge">Piloto Automático</span>
+                <h2>El sistema <span class="text-primary">trabaja por ti</span></h2>
+                <p>Mientras tú te centras en el cliente, Bitrix24 gestiona los recordatorios y las comunicaciones de
+                    forma automática ahorrando cientos de horas de tu equipo.</p>
+            </div>
+
+            <div class="bento-grid fade-in-up">
+
+                <!-- Main Featured Item -->
+                <div class="bento-card bento-large">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <i class="ph ph-robot"></i>
+                        </div>
+                        <h3>Recordatorios inteligentes multicanal</h3>
+                        <p>Si el cliente no responde en la fecha acordada, el sistema reactiva el contacto por sí solo.
+                            Sin intervención manual y a través de SMS, email o WhatsApp.</p>
+                    </div>
+                </div>
+
+                <!-- Medium Item 1 -->
+                <div class="bento-card bento-medium">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <i class="ph ph-folder-open"></i>
+                        </div>
+                        <h3>Solicitud de documentación</h3>
+                        <p>Petición inmediata al crear el expediente. Olvídate de acordarte de pedir papeles iniciales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Medium Item 2 -->
+                <div class="bento-card bento-medium">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <i class="ph-fill ph-lightning"></i>
+                        </div>
+                        <h3>Asignación automática</h3>
+                        <p>Documentos listos = Gestor notificado. El pase del cliente a tu equipo es instantáneo.</p>
+                    </div>
+                </div>
+
+                <!-- Small Item 1 -->
+                <div class="bento-card bento-small">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <i class="ph ph-bell"></i>
+                        </div>
+                        <h4>Notificación de lista</h4>
+                        <p class="text-sm">Avisos de revisión listos para firmar.</p>
+                    </div>
+                </div>
+
+                <!-- Small Item 2 -->
+                <div class="bento-card bento-small">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <i class="ph ph-calendar-check"></i>
+                        </div>
+                        <h4>Sellado de fecha</h4>
+                        <p class="text-sm">Se registra automáticamente la presentación.</p>
+                    </div>
+                </div>
+
+                <!-- Medium Item 3 -->
+                <div class="bento-card bento-medium bento-accent">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <i class="ph ph-credit-card"></i>
+                        </div>
+                        <h4>Facturación</h4>
+                        <p class="text-sm">Al cerrar la etapa, genera el cobro.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="target-audience" id="para-quien">
+        <div class="container section-container">
+            <div class="section-header fade-in-up">
+                <span class="badge">PERFIL IDEAL</span>
+                <h2>¿Para <span class="text-primary">quién es?</span></h2>
+                <p>Nuestra solución está pensada específicamente para encajar en tu día a día como asesor fiscal, sin
+                    fricciones ni complicaciones.</p>
+            </div>
+
+            <div class="audience-grid">
+                <!-- Card 1 -->
+                <div class="audience-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="audience-icon"><i class="ph-fill ph-users-three"></i></div>
+                    <p>Gestionas declaraciones de <strong>renta para personas físicas</strong> y quieres tener
+                        visibilidad en tiempo real de cada expediente.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="audience-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="audience-icon"><i class="ph-fill ph-git-merge"></i></div>
+                    <p>Tu equipo coordina la campaña <strong>entre varios gestores</strong> y necesitáis un proceso
+                        común y trazable.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="audience-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="audience-icon"><i class="ph-fill ph-puzzle-piece"></i></div>
+                    <p>Ya <strong>usas Bitrix24</strong> y quieres ordenar definitivamente la campaña de renta dentro
+                        del mismísimo CRM.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="audience-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="audience-icon"><i class="ph-fill ph-rocket-launch"></i></div>
+                    <p><strong>Empiezas con Bitrix24</strong> y quieres implantar un proceso de renta bien estructurado
+                        desde el primer día.</p>
+                </div>
+            </div>
         </div>
     </section>
 
