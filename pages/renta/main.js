@@ -49,5 +49,28 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.borderColor = 'rgba(255, 255, 255, 0.1)'; // vuelve a --glass-border
         });
     });
+    // 4. FAQ Accordion Logic
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            // Check if this item is already active
+            const isActive = item.classList.contains('active');
+
+            // Close all items first (optional: if you want only 1 open at a time)
+            faqItems.forEach(faq => {
+                faq.classList.remove('active');
+                faq.querySelector('.ph-plus, .ph-x').classList.replace('ph-x', 'ph-plus');
+            });
+
+            // If it wasn't active, open it
+            if (!isActive) {
+                item.classList.add('active');
+                const icon = item.querySelector('.ph-plus');
+                if (icon) icon.classList.replace('ph-plus', 'ph-x');
+            }
+        });
+    });
 
 });
